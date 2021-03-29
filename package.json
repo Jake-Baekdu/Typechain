@@ -1,0 +1,12 @@
+{
+  "name": "Typechain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jeongtai/Typechain.git",
+  "author": "jeongtai <zzze37@naver.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "tsc"
+  }
+}
