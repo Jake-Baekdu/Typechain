@@ -1,18 +1,25 @@
-class Human {
-    public name: string;
-    public age: number;
-    public gender: string;
-    constructor(name: string, age:number, gender?:string) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
+class Block {
+    public index:number;
+    public hash:string;
+    public previousHahs: string;
+    public data: string;
+    public timestamp: number;
+    constructor(index:number,
+    hash:string,
+    previousHahs: string,
+    data: string,
+    timestamp: number) {
+        this.index = index;
+        this.hash = hash;
+        this.previousHahs = previousHahs;
+        this.data = data;
+        this.timestamp = timestamp
     }
 }
 
-const jeongtai = new Human("jeongtai", 15, "male")
-const sayHi = (person : Human): string => {
-    return `Hello ${person.name}, your are ${person.age}, you are a ${person.gender}!`
-};
+const genesisBlock:Block = new Block(0, "202020202020202", "", "hello", 1235524);
 
-console.log(sayHi(jeongtai));
+let blockchain: [Block] = [genesisBlock];
+
+console.log(blockchain)
 export{};
