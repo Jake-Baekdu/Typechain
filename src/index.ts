@@ -76,3 +76,4 @@ const addBlock = (candidateBlock: Block): void => {
     }
 };
 export{};
+console.log("TEST")
